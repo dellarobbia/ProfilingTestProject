@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
 public class RandomNumberMaker {
     /**
      * Creates an array of random integers to a specified quantity.
-     * @param qty
+     * @param qty integer representing the number of random numbers to store in the array
      * @return integer array [qty]
      */
     public static int[] makeRandomNumbers(int qty){
