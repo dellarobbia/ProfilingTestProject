@@ -1,9 +1,6 @@
 package SoftwareDev;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * Program to examine profiling tools provided by IDEs such as JProfiler. Creates a set of random numbers, assigns
@@ -91,8 +88,11 @@ public class Main {
      * @param randomNumberHashMap A HashMap of random Integers with Integer key objects
      */
     private static void deleteHashMap(HashMap<Integer, Integer> randomNumberHashMap){
-        for(Integer key : randomNumberHashMap.keySet()){
-            randomNumberHashMap.remove(key);
+        Iterator<Integer> i = randomNumberHashMap.keySet().iterator();
+
+        while(i.hasNext()){
+            i.next();
+            i.remove();
         }
     }
 }
