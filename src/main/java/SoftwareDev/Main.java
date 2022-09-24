@@ -16,13 +16,23 @@ public class Main {
 
         //Create collection objects to hold the same array but in different ways
         ArrayList<Integer> randomNumberArrayList = buildArrayList(randomNumbers);
+        System.out.println("ArrayList created.");
+
         LinkedList<Integer> randomNumberLinkedList = buildLinkedList(randomNumbers);
+        System.out.println("LinkedList created.");
+
         HashMap<Integer, Integer> randomNumberHashMap = buildHashMap(randomNumbers);
+        System.out.println("HasMap created.");
 
         //Delete the Integers stored in each collection
         deleteArrayList(randomNumberArrayList);
+        System.out.println("ArrayList deleted.");
+
         deleteLinkedList(randomNumberLinkedList);
+        System.out.println("LinkedList deleted.");
+
         deleteHashMap(randomNumberHashMap);
+        System.out.println("HashMap deleted.");
     }
 
     /**
