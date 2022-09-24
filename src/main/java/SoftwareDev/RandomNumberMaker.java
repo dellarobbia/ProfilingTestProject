@@ -11,8 +11,8 @@ public class RandomNumberMaker {
      * @param qty integer representing the number of random numbers to store in the array
      * @return integer array [qty]
      */
-    public static int[] makeRandomNumbers(int qty){
-        int[] randomNumberArray = new int[qty];
+    public static Integer[] makeRandomNumbers(int qty){
+        Integer[] randomNumberArray = new Integer[qty];
 
         for(int i = 0; i < qty; i++){
             randomNumberArray[i] = ThreadLocalRandom.current().nextInt();
